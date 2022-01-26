@@ -4,7 +4,7 @@ The group project for ISSS610 Applied Machine Learning
 ## 1.1 Online News Popularity(2015)-classification/regression
 ### Problem Statement:
 
-Media and newspaper companies want their passages go viral. But there're so many factors that can contribute to it. Like the date and time it posts, the keywords, and so on. We propose the study to analyse the factors which lead to the popularity of news. And that will help the editors get more attentions from the public.
+Media and newspaper companies want their passages to go viral. But they're so many factors that can contribute to it. Like the date and time when it posts the keywords, the positive and negative words they used, the category of the news, and so on. We propose the study to analyze the factors which lead to the popularity of news. And that will help the editors get more attention from the public.
 <br>
 ### Data Description
 This dataset summarizes a heterogeneous set of features about articles published by Mashable in a period of two years. The goal is to predict the number of shares in social networks (popularity).<br>
@@ -531,13 +531,43 @@ df12.info()
 
 
 # 2 Rao Ningzhen
-# 2.1 Backorder Prediction(2021) - regression/classification
-- Backorder:<br>A backorder generally indicates that customer demand for a product or service exceeds a company’s capacity to supply it. Product backorder may be the result of strong sales performance (e.g. the product is in such high demand that production cannot keep up with sales). However, backorders can upset consumers, lead to canceled orders and decreased customer loyalty. Companies want to avoid backorders, but also avoid overstocking every product (leading to higher inventory costs). Machine learning can identify patterns related to backorders before customers order. Production can then adjust to minimize delays while customer service can provide accurate dates to keep customers informed and happy. The predictive analytics approach enables the maximum product to get in the hands of customers at the lowest cost to the organization.
+## 2.1 Backorder Prediction(2021) - regression/classification
+### Backorder Defination:
+A backorder generally indicates that customer demand for a product or service exceeds a company’s capacity to supply it. Product backorder may be the result of strong sales performance (e.g. the product is in such high demand that production cannot keep up with sales). However, backorders can upset consumers, lead to canceled orders and decreased customer loyalty. Companies want to avoid backorders, but also avoid overstocking every product (leading to higher inventory costs). Machine learning can identify patterns related to backorders before customers order. Production can then adjust to minimize delays while customer service can provide accurate dates to keep customers informed and happy. The predictive analytics approach enables the maximum product to get in the hands of customers at the lowest cost to the organization.
 A backorder is an order (or part of an order) waiting to be filled, usually because the merchant in question does not have that item currently stocked in the warehouse.
-
-- Problem Statement:<br>
+### Problem Statement:
 In supply chain system, Material backorder is a common problem, impacting an inventory system service level and effectiveness. Identifying parts with the highest chances of shortage prior its occurrence can present a high opportunity to improve an overall company’s performance. In this project, we will train classifiers to predict future backordered products and generate predictions for a test set.<br>
 [Data Description](https://www.kaggle.com/chandanareddy12/back-order-prediction)
+### Data Fields
+- sku - sku code
+- nationalinv - Current inventory level of component
+- leadtime - Transit time
+- in transit qty - Quantity in transit
+- forecastxmonth - Forecast sales for the net 3, 6, 9 months
+- salesxmonth - Sales quantity for the prior 1, 3, 6, 9 months
+- minbank - Minimum recommended amount in stock • potentialissue - Indictor variable noting potential issue with item
+- pieces past due - Parts overdue from source
+- perfxmonthsavg - Source performance in the last 6 and 12 months 
+- localboqty - Amount of stock orders overdue 
+- X17-X22 - General Risk Flags 
+- wentonbackorder - Product went on backorder
+### Proposed Models
+Four statistical models are used to predict the trip duration. 
+- (a) Linear regression, 
+- (b) Gradient boosting machines, 
+- (c) k nearest neighbor and 
+- (d) Random Forest(RF). 
+One Deep Learning model is used to predict the trip duration.
+- (e) CNN
+### Evaluation Metrix
+Four performance metrics 
+- Root mean squared error, 
+- Coefficient of Variance, 
+- Mean Absolute Error,
+- Median Absolute Error
+
+is used to determine the efficiency of the models.
+
 
 
 ```python
@@ -759,12 +789,11 @@ df21.info()
 
 
 # 3 Ren Xuezhe
-# 3.1 Home Credit Group(2019)-classification/regression
-- Problem statement:<br>
-
+## 3.1 Home Credit Group(2019)-classification/regression
+### Problem statement:
 Many people struggle to get loans due to insufficient or non-existent credit histories. And, unfortunately, this population is often taken advantage of by untrustworthy lenders.
 
-Home Credit Group
+### Home Credit Group
 
 Home Credit strives to broaden financial inclusion for the unbanked population by providing a positive and safe borrowing experience. In order to make sure this underserved population has a positive loan experience, Home Credit makes use of a variety of alternative data--including telco and transactional information--to predict their clients' repayment abilities.
 
@@ -777,7 +806,7 @@ While Home Credit is currently using various statistical and machine learning me
 
 # 4 Ding Yanmu
 OCR
-[Data Source](https://rrc.cvc.uab.es/?ch=16)
+
 # 5 Yu Di
  - Task: regression
  - Link: https://www.yelp.com/dataset

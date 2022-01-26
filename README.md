@@ -805,10 +805,19 @@ While Home Credit is currently using various statistical and machine learning me
 
 
 # 4 Ding Yanmu
-OCR
+Image Classification
 
 # 5 Yu Di
+### 5.1 Yelp Challenge(2021)-Regression
  - Task: regression
- - Link: https://www.yelp.com/dataset
+ - Dataset Link: https://www.yelp.com/dataset
+ - Kaggle Challenge: https://www.kaggle.com/yelp-dataset/yelp-dataset?select=yelp_academic_dataset_business.json
  - Dataset Name : Yelp
  - Models: lightGBM,DRF,NeuMF,BPRMF, deepconn
+ 
+### Context
+This dataset is a subset of Yelp's businesses, reviews, and user data. It was originally put together for the Yelp Dataset Challenge which is a chance for students to conduct research or analysis on Yelp's data and share their discoveries. In the most recent dataset you'll find information about businesses across 8 metropolitan areas in the USA and Canada.
+
+### Content
+This dataset contains five JSON files and the user agreement.
+More information about those files can be found here.

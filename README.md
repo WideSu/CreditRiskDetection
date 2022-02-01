@@ -1,10 +1,10 @@
 # ISSS610_AML_Group_Project
 The group project for ISSS610 Applied Machine Learning. After discussion, Xuezhe's idea win the most votes👏👏👏, so we decide to do the Home Credit Group project.
-## 3.1 Home Credit Group(2019)-classification/regression
+## Home Credit Group(2019)-classification/regression
 ### Problem statement:
 Many people struggle to get loans due to insufficient or non-existent credit histories. And, unfortunately, this population is often taken advantage of by untrustworthy lenders.
 
-### Home Credit Group
+### What's Home Credit Group?
 
 Home Credit strives to broaden financial inclusion for the unbanked population by providing a positive and safe borrowing experience. In order to make sure this underserved population has a positive loan experience, Home Credit makes use of a variety of alternative data--including telco and transactional information--to predict their clients' repayment abilities.
 
@@ -12,3 +12,7 @@ While Home Credit is currently using various statistical and machine learning me
 
 [Data Description](https://www.kaggle.com/c/home-credit-default-risk/overview)
 ![image](https://user-images.githubusercontent.com/44923423/150918954-1c6df444-bb94-4b2e-b7cb-1180540578a7.png)
+
+### Task assignment
+ - Data Visualization: Yu Di, Rao Ningzhen, Ren Xuezhe
+ - Data ingestion and feature engineering: Ding Yanmu, Huang Anni 

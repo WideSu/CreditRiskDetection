@@ -1,6 +1,5 @@
 # ISSS610_AML_Group_Project
-The group project for ISSS610 Applied Machine Learning
-# Thank to Xuezhe's idea, we decide to do this project
+The group project for ISSS610 Applied Machine Learning. After discussion, Xuezhe's idea win the most votes👏👏👏, so we decide to do the Home Credit Group project.
 ## 3.1 Home Credit Group(2019)-classification/regression
 ### Problem statement:
 Many people struggle to get loans due to insufficient or non-existent credit histories. And, unfortunately, this population is often taken advantage of by untrustworthy lenders.

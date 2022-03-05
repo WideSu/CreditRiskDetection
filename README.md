@@ -20,3 +20,4 @@ While Home Credit is currently using various statistical and machine learning me
 
 ### Timeline:
 - Feb 15(week 6): Due for [project proposal](https://docs.google.com/presentation/d/1UhU1AEJEKgL3x9Jgf06br34fP8WF7JeT4YM4FYSVr9s/edit?usp=sharing)
+- March 5(week 8): Finish our models

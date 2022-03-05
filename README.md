@@ -37,3 +37,7 @@ num_col = ['AMT_INCOME_TOTAL', 'AMT_CREDIT_x', 'AMT_ANNUITY_x',
 # Select features
 - Select by models
 - Select by KBest
+# Try some ML Models to see the result
+- Logistic regression
+- Light GBM
+- Gradient Boosting Machine

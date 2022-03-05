@@ -18,15 +18,6 @@ While Home Credit is currently using various statistical and machine learning me
  - Data ingestion and feature engineering: Ding Yanmu, Huang Anni
  - Models: 5 ppl, each one will choose a model
 ### Data overview
-Comes from a Kaggle competition: Home Credit Default Risk
-- Rows: 307512 rows
-- Columns: 346 columns (much more than 16 numerical columns)
-6 csv files
-- Tables:
- - application_{train|test}.csv: This is the main table, broken into two files for Train (with TARGET) and Test (without TARGET).
- - bureau.csv: All client’s previous credits provided by other financial institutions that were reported to Credit Bureau (for clients who have a loan in our sample).
- - bureau_balance.csv: Monthly balances of previous credits in Credit Bureau.
- - POS_CASH_balance.csv: Monthly balance snapshots of previous POS (point of sales) and cash loans that the applicant had with Home Credit.
 ![image](https://user-images.githubusercontent.com/44923423/156871738-3a4c5799-75c9-4c2a-9f72-42250a858665.png)
 
 ### Timeline:

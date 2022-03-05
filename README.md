@@ -4,7 +4,7 @@ I and Yanmu are in charge of this part
 - Delete the features whose missing value is above 30%
 - Delete the features whose variance is below 0.01
 ```python
-cal_col=['NAME_CONTRACT_TYPE_x', 'NAME_TYPE_SUITE_x', 'NAME_INCOME_TYPE',
+cat_col=['NAME_CONTRACT_TYPE_x', 'NAME_TYPE_SUITE_x', 'NAME_INCOME_TYPE',
        'NAME_EDUCATION_TYPE', 'NAME_FAMILY_STATUS', 'NAME_HOUSING_TYPE',
        'WEEKDAY_APPR_PROCESS_START_x', 'ORGANIZATION_TYPE',
        'NAME_CONTRACT_STATUS', 'CODE_GENDER', 'FLAG_OWN_CAR',

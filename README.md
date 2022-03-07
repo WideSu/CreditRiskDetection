@@ -3,7 +3,6 @@ The group project for ISSS610 Applied Machine Learning. After discussion, Xuezhe
 ## Model List
 
  - LR
- - SVM
  - DRF
  - lightgbm
  - DeepFM

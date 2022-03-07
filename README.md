@@ -6,4 +6,4 @@ The group project for ISSS610 Applied Machine Learning. After discussion, Xuezhe
  - SVM
  - DRF
  - lightgbm
- - AFM
+ - DeepFM

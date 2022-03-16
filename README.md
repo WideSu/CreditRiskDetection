@@ -283,7 +283,7 @@ cat_col = ['FLAG_DOCUMENT_14_0.0',
  'FLAG_DOCUMENT_13_1.0',
  'FLAG_EMAIL_0.0',
  'FLAG_EMAIL_1.0']
-''
+'''
 # Select features
 - Select by models
  -All kinds of classifiers

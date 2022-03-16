@@ -19,7 +19,7 @@ from sklearn.pipeline import Pipeline
 from sklearn import preprocessing
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import PolynomialFeatures, RobustScaler, Normalizer, MinMaxScaler, StandardScaler, \
-    QuantileTransformer, PowerTransformer, normalize
+    QuantileTransformer, PowerTransformer, normalize,  OneHotEncoder
 import category_encoders as ce
 from sklearn.impute import SimpleImputer # Handle missing values
 # Feature engineering
@@ -42,6 +42,68 @@ from sklearn.metrics import roc_auc_score, roc_curve
 from sklearn.model_selection import KFold, StratifiedKFold
 
 warnings.simplefilter(action='ignore', category=FutureWarning)
+
+# Feature selected
+feature_dict = {'RandomForest': ['REGION_RATING_CLIENT',
+  'DEF_30_CNT_SOCIAL_CIRCLE',
+  'REG_CITY_NOT_WORK_CITY',
+  'CODE_GENDER',
+  'DAYS_BIRTH',
+  'SK_ID_CURR',
+  'CNT_FAM_MEMBERS',
+  'AMT_INCOME_TOTAL',
+  'OBS_60_CNT_SOCIAL_CIRCLE',
+  'AMT_CREDIT',
+  'HOUR_APPR_PROCESS_START',
+  'OBS_30_CNT_SOCIAL_CIRCLE',
+  'AMT_GOODS_PRICE',
+  'DAYS_ID_PUBLISH',
+  'EXT_SOURCE_2',
+  'REGION_POPULATION_RELATIVE',
+  'CNT_CHILDREN',
+  'LIVE_CITY_NOT_WORK_CITY',
+  'DAYS_LAST_PHONE_CHANGE',
+  'DAYS_REGISTRATION'],
+ 'ExtraTree': ['DEF_30_CNT_SOCIAL_CIRCLE',
+  'REG_CITY_NOT_WORK_CITY',
+  'CODE_GENDER',
+  'DAYS_BIRTH',
+  'SK_ID_CURR',
+  'CNT_FAM_MEMBERS',
+  'AMT_INCOME_TOTAL',
+  'OBS_60_CNT_SOCIAL_CIRCLE',
+  'AMT_CREDIT',
+  'HOUR_APPR_PROCESS_START',
+  'OBS_30_CNT_SOCIAL_CIRCLE',
+  'AMT_GOODS_PRICE',
+  'DAYS_ID_PUBLISH',
+  'EXT_SOURCE_2',
+  'REGION_POPULATION_RELATIVE',
+  'CNT_CHILDREN',
+  'DAYS_LAST_PHONE_CHANGE',
+  'DAYS_REGISTRATION',
+  'WEEKDAY_APPR_PROCESS_START_FRIDAY_1_1',
+  'ORGANIZATION_TYPE_Other_0_0'],
+ 'LogisticRegression': ['DEF_30_CNT_SOCIAL_CIRCLE',
+  'CODE_GENDER',
+  'SK_ID_CURR',
+  'EXT_SOURCE_2',
+  'CNT_CHILDREN',
+  'DAYS_REGISTRATION',
+  'FLAG_DOCUMENT_11_0.0_0_0',
+  'FLAG_DOCUMENT_11_0.0_0_1',
+  'FLAG_DOCUMENT_11_0.0_1_0',
+  'FLAG_DOCUMENT_11_0.0_1_1',
+  'FLAG_DOCUMENT_11_1.0_0_0',
+  'FLAG_DOCUMENT_11_1.0_0_1',
+  'FLAG_DOCUMENT_11_1.0_1_0',
+  'FLAG_DOCUMENT_11_1.0_1_1',
+  'ORGANIZATION_TYPE_Advertising_0_0',
+  'ORGANIZATION_TYPE_Advertising_0_1',
+  'ORGANIZATION_TYPE_Advertising_1_0',
+  'ORGANIZATION_TYPE_Advertising_1_1',
+  'ORGANIZATION_TYPE_Hotel_0_0',
+  'ORGANIZATION_TYPE_Hotel_1_1']}
 
 # After joining, there're many duplicated columns
 def remove_duplicated_cols(data, feature_list):
@@ -125,9 +187,13 @@ def my_standarization(standarize_type, x_vars, data):
     Output: Dataframe
         The standarized dataframe
     '''
+    x_vars = list(set(x_vars) & set(data.columns))
     standarized_data = data.copy(deep=True)
+    print('Data shape', data.shape)
     for x_var in x_vars:
-        X = data[x_var][:].values.reshape(-1, 1)
+        X = data.loc[:,x_var].values.reshape(-1, 1)
+        # print(x_var)
+        # print('X shape',X.shape)
         if standarize_type == "RobustScaler":
             scaler = RobustScaler()
         if standarize_type == "MinMaxScaler":
@@ -138,8 +204,7 @@ def my_standarization(standarize_type, x_vars, data):
             scaler = QuantileTransformer()
         if standarize_type == "PowerTransformer":
             scaler = QuantileTransformer()
-        scaler.fit_transform(X)
-        standarized_data[x_var] = scaler.transform(X)
+        standarized_data[x_var] = scaler.fit_transform(X)
     print("Finished Standarization")
     #     print("-"*20)
     #     print(standarized_data.describe())
@@ -161,10 +226,11 @@ def my_normalization(norm_type, x_vars, data):
     Output: Dataframe
         The normalized dataframe
     '''
+    x_vars = list(set(x_vars) & set(data.columns))
     normalized_data = data.copy(deep=True)
-    X = data[x_vars][:].values
-    X_normalized = normalize(X, norm=norm_type)
-    normalized_data[x_vars] = X_normalized
+    X = data.loc[:,x_vars]
+    X_normalized = Normalizer(norm=norm_type).fit_transform(X)
+    normalized_data.loc[:,x_vars] = X_normalized
     print("Finished Normalization")
     #     print("-"*20)
     #     print(normalized_data.describe())
@@ -216,11 +282,18 @@ def make_classification(model_name,x_vars,y_var,train_data, test_data):
         make_classification(model_name='RandomForest', x_vars = feature_dict['RandomForest'], y_var='TARGET', train_data = train_data, test_data = test_data)
     '''
     random_state = 0
+    data = pd.concat([train_data,test_data])
+    x_vars = list(set(data.columns) & set(x_vars))
+    # print('x_vars',len(x_vars))
+    X, y = data.loc[:,x_vars],data.loc[:,y_var]
     X_train, X_test, y_train, y_test = train_data.loc[:,x_vars], test_data.loc[:,x_vars], train_data.loc[:,y_var],test_data.loc[:,y_var]
     if model_name == 'RandomForest':
         classifier = RandomForestClassifier(random_state=random_state)
     if model_name == 'LogisticRegression':
         classifier = LogisticRegression(random_state=random_state)
+    if model_name == 'ExtraTree':
+        classifier = ExtraTreesClassifier(n_estimators=100,
+                             random_state=random_state, n_jobs=-1)
     '''
     write your code here
     '''

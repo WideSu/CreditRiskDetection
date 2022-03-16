@@ -5,7 +5,7 @@ In general, there're 79 features, and (17 numerical features, and 62 categorical
 - Deleted features without target value
 - Deleted features without description
 - Deleted the features whose missing value is above 10%
-- Delete the numerical features whose variance is below $10^(-8)$
+- Delete the numerical features whose variance is below 10^(-8)
 
 ```python
 cat_col = ['NAME_CONTRACT_TYPE','NAME_TYPE_SUITE','NAME_INCOME_TYPE','NAME_EDUCATION_TYPE','NAME_FAMILY_STATUS','NAME_HOUSING_TYPE',\

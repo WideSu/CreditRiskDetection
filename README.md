@@ -1,7 +1,7 @@
 # ISSS610_AML_Group_Project
 I and Yanmu are in charge of this part
 # Feature selection
-In general, there're 79 features, and (17 numerical features, and 62 categorical features)
+In general, there're 62 features, and (26 numerical features, and 36 categorical features)
 - Deleted features without target value
 - Deleted features without description
 - Deleted the features whose missing value is above 10%

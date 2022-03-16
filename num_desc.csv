@@ -1,27 +1,27 @@
 ,Column,Desc
-0,REGION_RATING_CLIENT,"Our rating of the region where client lives (1,2,3)"
-1,AMT_INCOME_TOTAL,Income of the client
-2,DEF_60_CNT_SOCIAL_CIRCLE,How many observation of client's social surroundings defaulted on 60 (days past due) DPD
+0,DAYS_REGISTRATION,How many days before the application did client change his registration
+1,EXT_SOURCE_2,Normalized score from external data source
+2,SK_ID_CURR,ID of loan in our sample
 3,DEF_30_CNT_SOCIAL_CIRCLE,How many observation of client's social surroundings defaulted on 30 DPD (days past due) 
-4,OBS_30_CNT_SOCIAL_CIRCLE,How many observation of client's social surroundings with observable 30 DPD (days past due) default
-5,EXT_SOURCE_2,Normalized score from external data source
-6,OBS_60_CNT_SOCIAL_CIRCLE,How many observation of client's social surroundings with observable 60 DPD (days past due) default
-7,AMT_CREDIT,Credit amount of the loan
-8,DAYS_REGISTRATION,How many days before the application did client change his registration
-9,REG_CITY_NOT_LIVE_CITY,"Flag if client's permanent address does not match contact address (1=different, 0=same, at city level)"
-10,DAYS_ID_PUBLISH,How many days before the application did client change the identity document with which he applied for the loan
-11,REG_CITY_NOT_WORK_CITY,"Flag if client's permanent address does not match work address (1=different, 0=same, at city level)"
-12,REG_REGION_NOT_WORK_REGION,"Flag if client's permanent address does not match work address (1=different, 0=same, at region level)"
-13,SK_ID_CURR,ID of loan in our sample
-14,LIVE_REGION_NOT_WORK_REGION,"Flag if client's contact address does not match work address (1=different, 0=same, at region level)"
-15,CODE_GENDER,Gender of the client
-16,REG_REGION_NOT_LIVE_REGION,"Flag if client's permanent address does not match contact address (1=different, 0=same, at region level)"
-17,CNT_CHILDREN,Number of children the client has
-18,AMT_GOODS_PRICE,For consumer loans it is the price of the goods for which the loan is given
-19,CNT_FAM_MEMBERS,How many family members does client have
-20,REGION_RATING_CLIENT_W_CITY,"Our rating of the region where client lives with taking city into account (1,2,3)"
-21,REGION_POPULATION_RELATIVE,Normalized population of region where client lives (higher number means the client lives in more populated region)
-22,DAYS_LAST_PHONE_CHANGE,How many days before application did client change phone
-23,LIVE_CITY_NOT_WORK_CITY,"Flag if client's contact address does not match work address (1=different, 0=same, at city level)"
-24,HOUR_APPR_PROCESS_START,Approximately at what hour did the client apply for the loan
-25,DAYS_BIRTH,Client's age in days at the time of application
+4,CODE_GENDER,Gender of the client
+5,AMT_GOODS_PRICE,For consumer loans it is the price of the goods for which the loan is given
+6,CNT_CHILDREN,Number of children the client has
+7,REG_REGION_NOT_WORK_REGION,"Flag if client's permanent address does not match work address (1=different, 0=same, at region level)"
+8,DAYS_BIRTH,Client's age in days at the time of application
+9,DEF_60_CNT_SOCIAL_CIRCLE,How many observation of client's social surroundings defaulted on 60 (days past due) DPD
+10,REG_CITY_NOT_WORK_CITY,"Flag if client's permanent address does not match work address (1=different, 0=same, at city level)"
+11,REGION_RATING_CLIENT_W_CITY,"Our rating of the region where client lives with taking city into account (1,2,3)"
+12,LIVE_CITY_NOT_WORK_CITY,"Flag if client's contact address does not match work address (1=different, 0=same, at city level)"
+13,OBS_60_CNT_SOCIAL_CIRCLE,How many observation of client's social surroundings with observable 60 DPD (days past due) default
+14,DAYS_LAST_PHONE_CHANGE,How many days before application did client change phone
+15,CNT_FAM_MEMBERS,How many family members does client have
+16,REGION_RATING_CLIENT,"Our rating of the region where client lives (1,2,3)"
+17,DAYS_ID_PUBLISH,How many days before the application did client change the identity document with which he applied for the loan
+18,REGION_POPULATION_RELATIVE,Normalized population of region where client lives (higher number means the client lives in more populated region)
+19,HOUR_APPR_PROCESS_START,Approximately at what hour did the client apply for the loan
+20,REG_REGION_NOT_LIVE_REGION,"Flag if client's permanent address does not match contact address (1=different, 0=same, at region level)"
+21,LIVE_REGION_NOT_WORK_REGION,"Flag if client's contact address does not match work address (1=different, 0=same, at region level)"
+22,REG_CITY_NOT_LIVE_CITY,"Flag if client's permanent address does not match contact address (1=different, 0=same, at city level)"
+23,OBS_30_CNT_SOCIAL_CIRCLE,How many observation of client's social surroundings with observable 30 DPD (days past due) default
+24,AMT_CREDIT,Credit amount of the loan
+25,AMT_INCOME_TOTAL,Income of the client

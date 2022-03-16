@@ -300,8 +300,8 @@ def make_classification(model_name,x_vars,y_var,train_data, test_data):
     classifier.fit(X_train, y_train)
     cv_recall = cross_val_score(classifier, X, y, cv=5, scoring = 'recall')
     cv_auc = cross_val_score(classifier, X, y, cv=5, scoring = 'roc_auc')
-    print('{} classifer achieved mean: {} recall (std: {})'.format(model_name,cv_recall.mean(),cv_recall.std()))
-    print('{} classifer achieved mean: {} roc_auc (std: {})'.format(model_name,cv_auc.mean(),cv_auc.std()))
+    print('{} classifer achieved mean: {:.4} recall (std: +-{:2.2%})'.format(model_name,cv_recall.mean(),cv_recall.std()))
+    print('{} classifer achieved mean: {:.4} roc_auc (std: +-{:2.2%})'.format(model_name,cv_auc.mean(),cv_auc.std()))
 
    
     

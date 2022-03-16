@@ -293,16 +293,21 @@ cat_col = ['FLAG_DOCUMENT_14_0.0',
 - Light GBM(TO-DO)
 - Gradient Boosting Machine
 - Random Forest
-- '''
+
+'''
 RandomForest classifer achieved mean: 0.7898 recall (std: +-2.31%)
 RandomForest classifer achieved mean: 0.9831 roc_auc (std: +-0.17%)
 '''
+
 -Logistic Regression
+
 '''
 LogisticRegression classifer achieved mean: 0.07814 recall (std: +-2.50%)
 LogisticRegression classifer achieved mean: 0.7853 roc_auc (std: +-0.78%)
 '''
+
 -ExtraTree
+
 '''
 ExtraTree classifer achieved mean: 0.7898 recall (std: +-2.31%)<br>
 ExtraTree classifer achieved mean: 0.9845 roc_auc (std: +-0.39%)

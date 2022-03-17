@@ -20,7 +20,6 @@ from sklearn import preprocessing
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import PolynomialFeatures, RobustScaler, Normalizer, MinMaxScaler, StandardScaler, \
     QuantileTransformer, PowerTransformer, normalize,  OneHotEncoder
-import category_encoders as ce
 from sklearn.impute import SimpleImputer # Handle missing values
 # Feature engineering
 from sklearn.decomposition import PCA

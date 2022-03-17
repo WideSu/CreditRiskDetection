@@ -26,10 +26,10 @@ While Home Credit is currently using various statistical and machine learning me
 
 ### Results
 ```python
-RandomForest classifer achieved mean: 0.7916 recall (std: +-3.81%)
-RandomForest classifer achieved mean: 0.9827 roc_auc (std: +-0.20%)
-LogisticRegression classifer achieved mean: 0.06326 recall (std: +-1.30%)
-LogisticRegression classifer achieved mean: 0.8038 roc_auc (std: +-2.49%)
-ExtraTree classifer achieved mean: 0.7916 recall (std: +-3.81%)
-ExtraTree classifer achieved mean: 0.984 roc_auc (std: +-0.15%)
+RandomForest classifer achieved recall 0.7907
+RandomForest classifer achieved roc_auc 0.9836
+LogisticRegression classifer achieved recall 0.3116
+LogisticRegression classifer achieved roc_auc 0.85
+ExtraTree classifer achieved recall 0.7907
+ExtraTree classifer achieved roc_auc 0.9827
 ```

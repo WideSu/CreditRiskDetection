@@ -316,6 +316,6 @@ ExtraTree classifer achieved mean: 0.9845 roc_auc (std: +-0.39%)
 ```
 
 ## The results for tree-based classifiers are good, why?
-1.	Random forest is bagging method, which has low variance high bias. So, it’s robust to out-liners in data, which works well in our scenario. In predictive maintenance, the parameter logs for machines with alarms have more out-liners than normal since not all alarms can be predicted. Some machines don’t work well for environment change or manual interruptions.
-2.	Random forest selects different features in each sub decision tree, so it ovoid selecting the same features all the time, which lead to robustness to out-liners  in features. Not all the changes in features are significantly different before alarms. For example, ‘actual_position_r_traveler’ is randomly scattered for alarm and alarm data.
+1.	Random forest is bagging method, which has low variance high bias. So, it’s robust to out-liners in data, which works well in our scenario. In credit risk assessment, the historical payment data and personal information have more outliners than normal since not all customers give the correct information.
+2.	Random forest selects different features in each sub decision tree, so it ovoid selecting the same features all the time, which lead to robustness to outliners  in features. Not all the changes in features are significantly different between clients who are capable to pay the loan and who can not. 
 

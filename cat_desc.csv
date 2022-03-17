@@ -1,37 +1,37 @@
 ,Column,Desc
-0,FLAG_DOCUMENT_15,Did client provide document 15
+0,FLAG_DOCUMENT_9,Did client provide document 9
 1,NAME_INCOME_TYPE,"Clients income type (businessman, working, maternity leave)"
-2,FLAG_MOBIL,"Did client provide mobile phone (1=YES, 0=NO)"
-3,NAME_FAMILY_STATUS,Family status of the client
-4,FLAG_DOCUMENT_16,Did client provide document 16
-5,FLAG_DOCUMENT_10,Did client provide document 10
-6,FLAG_DOCUMENT_11,Did client provide document 11
-7,NAME_TYPE_SUITE,Who was accompanying client when he was applying for the loan
-8,FLAG_DOCUMENT_8,Did client provide document 8
-9,FLAG_DOCUMENT_14,Did client provide document 14
-10,FLAG_DOCUMENT_21,Did client provide document 21
-11,FLAG_DOCUMENT_3,Did client provide document 3
-12,FLAG_PHONE,"Did client provide home phone (1=YES, 0=NO)"
-13,ORGANIZATION_TYPE,Type of organization where client works
-14,NAME_HOUSING_TYPE,"What is the housing situation of the client (renting, living with parents, ...)"
-15,FLAG_EMP_PHONE,"Did client provide work phone (1=YES, 0=NO)"
-16,FLAG_DOCUMENT_4,Did client provide document 4
-17,FLAG_WORK_PHONE,"Did client provide home phone (1=YES, 0=NO)"
-18,NAME_EDUCATION_TYPE,Level of highest education the client achieved
-19,FLAG_OWN_CAR,Flag if the client owns a car
-20,FLAG_DOCUMENT_20,Did client provide document 20
-21,FLAG_DOCUMENT_9,Did client provide document 9
-22,FLAG_EMAIL,"Did client provide email (1=YES, 0=NO)"
-23,FLAG_OWN_REALTY,Flag if client owns a house or flat
-24,FLAG_DOCUMENT_2,Did client provide document 2
-25,NAME_CONTRACT_TYPE,Identification if loan is cash or revolving
-26,FLAG_DOCUMENT_5,Did client provide document 5
-27,FLAG_DOCUMENT_13,Did client provide document 13
-28,FLAG_CONT_MOBILE,"Was mobile phone reachable (1=YES, 0=NO)"
-29,FLAG_DOCUMENT_19,Did client provide document 19
-30,FLAG_DOCUMENT_17,Did client provide document 17
-31,FLAG_DOCUMENT_18,Did client provide document 18
-32,WEEKDAY_APPR_PROCESS_START,On which day of the week did the client apply for the loan
-33,FLAG_DOCUMENT_6,Did client provide document 6
-34,FLAG_DOCUMENT_7,Did client provide document 7
-35,FLAG_DOCUMENT_12,Did client provide document 12
+2,FLAG_DOCUMENT_7,Did client provide document 7
+3,FLAG_DOCUMENT_12,Did client provide document 12
+4,NAME_EDUCATION_TYPE,Level of highest education the client achieved
+5,FLAG_DOCUMENT_20,Did client provide document 20
+6,WEEKDAY_APPR_PROCESS_START,On which day of the week did the client apply for the loan
+7,FLAG_EMP_PHONE,"Did client provide work phone (1=YES, 0=NO)"
+8,FLAG_CONT_MOBILE,"Was mobile phone reachable (1=YES, 0=NO)"
+9,FLAG_DOCUMENT_17,Did client provide document 17
+10,FLAG_EMAIL,"Did client provide email (1=YES, 0=NO)"
+11,FLAG_DOCUMENT_18,Did client provide document 18
+12,FLAG_DOCUMENT_3,Did client provide document 3
+13,FLAG_DOCUMENT_14,Did client provide document 14
+14,NAME_CONTRACT_TYPE,Identification if loan is cash or revolving
+15,NAME_TYPE_SUITE,Who was accompanying client when he was applying for the loan
+16,FLAG_WORK_PHONE,"Did client provide home phone (1=YES, 0=NO)"
+17,FLAG_DOCUMENT_16,Did client provide document 16
+18,FLAG_DOCUMENT_15,Did client provide document 15
+19,FLAG_DOCUMENT_6,Did client provide document 6
+20,ORGANIZATION_TYPE,Type of organization where client works
+21,FLAG_DOCUMENT_5,Did client provide document 5
+22,NAME_FAMILY_STATUS,Family status of the client
+23,FLAG_DOCUMENT_4,Did client provide document 4
+24,FLAG_PHONE,"Did client provide home phone (1=YES, 0=NO)"
+25,FLAG_OWN_REALTY,Flag if client owns a house or flat
+26,FLAG_MOBIL,"Did client provide mobile phone (1=YES, 0=NO)"
+27,FLAG_DOCUMENT_19,Did client provide document 19
+28,NAME_HOUSING_TYPE,"What is the housing situation of the client (renting, living with parents, ...)"
+29,FLAG_DOCUMENT_10,Did client provide document 10
+30,FLAG_DOCUMENT_8,Did client provide document 8
+31,FLAG_DOCUMENT_13,Did client provide document 13
+32,FLAG_DOCUMENT_21,Did client provide document 21
+33,FLAG_DOCUMENT_11,Did client provide document 11
+34,FLAG_DOCUMENT_2,Did client provide document 2
+35,FLAG_OWN_CAR,Flag if the client owns a car

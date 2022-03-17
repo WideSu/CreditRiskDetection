@@ -411,15 +411,15 @@ RandomForest classifer achieved mean: 0.9831 roc_auc (std: +-0.17%)
 -Logistic Regression
 
 ```python
-LogisticRegression classifer achieved mean: 0.07814 recall (std: +-2.50%)
-LogisticRegression classifer achieved mean: 0.7853 roc_auc (std: +-0.78%)
+LogisticRegression classifer achieved mean: 0.06326 recall (std: +-1.30%)
+LogisticRegression classifer achieved mean: 0.8038 roc_auc (std: +-2.49%)
 ```
 
 -ExtraTree
 
 ```python
-ExtraTree classifer achieved mean: 0.7898 recall (std: +-2.31%)<br>
-ExtraTree classifer achieved mean: 0.9845 roc_auc (std: +-0.39%)
+ExtraTree classifer achieved mean: 0.7916 recall (std: +-3.81%)
+ExtraTree classifer achieved mean: 0.984 roc_auc (std: +-0.15%)
 ```
 
 ## The results for tree-based classifiers are good, why?

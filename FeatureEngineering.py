@@ -37,9 +37,8 @@ from sklearn.linear_model import LogisticRegression
 # Evaluation
 from sklearn.model_selection import cross_val_score, GridSearchCV
 from sklearn import metrics
-from sklearn.metrics import roc_auc_score, roc_curve
+from sklearn.metrics import roc_auc_score, roc_curve, recall_score
 from sklearn.model_selection import KFold, StratifiedKFold
-
 warnings.simplefilter(action='ignore', category=FutureWarning)
 
 # Feature selected
@@ -284,7 +283,7 @@ def make_classification(model_name,x_vars,y_var,train_data, test_data):
     data = pd.concat([train_data,test_data])
     x_vars = list(set(data.columns) & set(x_vars))
     # print('x_vars',len(x_vars))
-    X, y = data.loc[:,x_vars],data.loc[:,y_var]
+
     X_train, X_test, y_train, y_test = train_data.loc[:,x_vars], test_data.loc[:,x_vars], train_data.loc[:,y_var],test_data.loc[:,y_var]
     if model_name == 'RandomForest':
         classifier = RandomForestClassifier(random_state=random_state)
@@ -297,10 +296,12 @@ def make_classification(model_name,x_vars,y_var,train_data, test_data):
     write your code here
     '''
     classifier.fit(X_train, y_train)
-    cv_recall = cross_val_score(classifier, X, y, cv=5, scoring = 'recall')
-    cv_auc = cross_val_score(classifier, X, y, cv=5, scoring = 'roc_auc')
-    print('{} classifer achieved mean: {:.4} recall (std: +-{:2.2%})'.format(model_name,cv_recall.mean(),cv_recall.std()))
-    print('{} classifer achieved mean: {:.4} roc_auc (std: +-{:2.2%})'.format(model_name,cv_auc.mean(),cv_auc.std()))
+    y_pred = classifier.predict_proba(X_test)[:,1]
+    y_pred_lable = classifier.predict(X_test)
+    roc_score = roc_auc_score(y_test, y_pred)
+    r_score = recall_score(y_test, y_pred_lable)
+    print('{} classifer achieved recall {}'.format(model_name,r_score))
+    print('{} classifer achieved roc_auc {}'.format(model_name,roc_score))
 
    
     

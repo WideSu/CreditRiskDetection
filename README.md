@@ -23,3 +23,13 @@ While Home Credit is currently using various statistical and machine learning me
 ### Timeline:
 - Feb 15(week 6): Due for [project proposal](https://docs.google.com/presentation/d/1UhU1AEJEKgL3x9Jgf06br34fP8WF7JeT4YM4FYSVr9s/edit?usp=sharing)
 - March 5(week 8): Finish our models
+
+### Results
+'''
+RandomForest classifer achieved mean: 0.7916 recall (std: +-3.81%)
+RandomForest classifer achieved mean: 0.9827 roc_auc (std: +-0.20%)
+LogisticRegression classifer achieved mean: 0.06326 recall (std: +-1.30%)
+LogisticRegression classifer achieved mean: 0.8038 roc_auc (std: +-2.49%)
+ExtraTree classifer achieved mean: 0.7916 recall (std: +-3.81%)
+ExtraTree classifer achieved mean: 0.984 roc_auc (std: +-0.15%)
+'''

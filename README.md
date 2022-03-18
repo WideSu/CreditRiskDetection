@@ -26,7 +26,7 @@ While Home Credit is currently using various statistical and machine learning me
 
 ### Results
 
-|FIELD1 |ML models|FIELD3            |FIELD4      |FIELD5  |Deep Learning|
+| |ML models|           |     |  |Deep Learning|
 |-------|---------|------------------|------------|--------|-------------|
 |       |ExtraTree|LogisticRegression|RandomForest|LightGBM|DeepFM       |
 |recall |0.7907   |0.3116            |0.7907      |0.8296  |0.7860       |

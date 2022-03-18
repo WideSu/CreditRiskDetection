@@ -25,13 +25,10 @@ While Home Credit is currently using various statistical and machine learning me
 - March 5(week 8): Finish our models
 
 ### Results
-```python
-RandomForest classifer achieved recall 0.7907
-RandomForest classifer achieved roc_auc 0.9836
-LogisticRegression classifer achieved recall 0.3116
-LogisticRegression classifer achieved roc_auc 0.85
-ExtraTree classifer achieved recall 0.7907
-ExtraTree classifer achieved roc_auc 0.9827
-LightGBM Full AUC score 0.944801
-Full RECALL 0.829630
-```
+
+|FIELD1 |ML models|FIELD3            |FIELD4      |FIELD5  |Deep Learning|
+|-------|---------|------------------|------------|--------|-------------|
+|       |ExtraTree|LogisticRegression|RandomForest|LightGBM|DeepFM       |
+|recall |0.7907   |0.3116            |0.7907      |0.8296  |0.7860       |
+|roc_auc|0.9836   |0.85              |0.9836      |0.9448  |0.7885       |
+

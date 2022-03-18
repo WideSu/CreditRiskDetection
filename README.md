@@ -32,4 +32,6 @@ LogisticRegression classifer achieved recall 0.3116
 LogisticRegression classifer achieved roc_auc 0.85
 ExtraTree classifer achieved recall 0.7907
 ExtraTree classifer achieved roc_auc 0.9827
+LightGBM Full AUC score 0.944801
+Full RECALL 0.829630
 ```

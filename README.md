@@ -30,6 +30,6 @@ While Home Credit is currently using various statistical and machine learning me
 | |ML models|           |     |  |Deep Learning|
 |-------|---------|------------------|------------|--------|-------------|
 |       |ExtraTree|LogisticRegression|RandomForest|LightGBM|DeepFM       |
-|recall |0.7907   |0.3116            |0.7907      |0.8296  |0.7860       |
-|roc_auc|0.9836   |0.85              |0.9836      |0.9448  |0.7885       |
+|recall |0.7907   |0.3116            |0.7907      |0.8296  |0.8326       |
+|roc_auc|0.9836   |0.85              |0.9836      |0.9448  |0.8492       |
 

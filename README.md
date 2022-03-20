@@ -400,7 +400,6 @@ cat_col = ['FLAG_DOCUMENT_14_0.0',
 - Select by KBest(Haven't done)
 # Try some ML Models to see the result
 - Light GBM(TO-DO)
-- Gradient Boosting Machine
 - Random Forest
 
 ```python

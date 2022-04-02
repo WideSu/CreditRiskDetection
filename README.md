@@ -1,31 +1,57 @@
-# ISSS610_AML_Group_Project
-The group project for ISSS610 Applied Machine Learning. After discussion, Xuezhe's idea win the most votes👏👏👏, so we decide to do the Home Credit Group project.
-## Home Credit Group(2019)-classification
-### Problem statement:
-Many people struggle to get loans due to insufficient or non-existent credit histories. And, unfortunately, this population is often taken advantage of by untrustworthy lenders.
+# Home Credit Default Risk
+This is a group project for ISSS610 Applied Machine Learning.
+## Notebook Instructions 
+The Programs folder contains 8 notebooks, which comprise of 4 phases of the projects:
+### 0 Data processing: 
+- Filename: `0.DataIngestion.ipynb`
+- Input file: `application_train.csv` and other tables on Kaggle website
+- Output file: `data_v1.csv`
+- Functions:
+    - Merged 7 tables
+    
+### 1 EDA
+- Filename: `1.EDA.ipynb`
+- Input file: `data_v1.csv`
+- Output file: None
+- Functions:
+    - Plotted histograms, Boxplots, Correlation plots for the merged data
 
-### What's Home Credit Group?
+### 2 Data Preprocessing
+- Filename: `2.DataProcessing.ipynb`
+- Input file: `data_v1.csv`
+- Output file: `test_data.csv`, `train_data.csv`
+- Functions:
+    - Handled missing values
+    - Standarized and normalized numerical features
+    - Conducted one-hot encoding for catergorical features
+    - Stratified train test splitting
 
-Home Credit strives to broaden financial inclusion for the unbanked population by providing a positive and safe borrowing experience. In order to make sure this underserved population has a positive loan experience, Home Credit makes use of a variety of alternative data--including telco and transactional information--to predict their clients' repayment abilities.
+### 2 Data Preprocessing
+- Filename: `2.DataProcessing.ipynb`
+- Input file: `data_v1.csv`
+- Output file: `test_data.csv`, `train_data.csv`
+- Functions:
+    - Handled missing values
+    - Standarized and normalized numerical features
+    - Conducted one-hot encoding for catergorical features
+    - Stratified train test splitting
+### 3. Modeling
+- Filename:
+    - `3.Modeling_DeepFM.ipynb`
+    - `3.Modeling_LGBM.ipynb`
+    - `3.Modeling_RandomForest.ipynb`
+    - `3.Modling_LogisticRegression.ipynb`
+- Input file: `test_data.csv`, `train_data.csv`
+- Output file: None
+- Function:
+    - Train and evaluate the models
 
-While Home Credit is currently using various statistical and machine learning methods to make these predictions, they're challenging Kagglers to help them unlock the full potential of their data. Doing so will ensure that clients capable of repayment are not rejected and that loans are given with a principal, maturity, and repayment calendar that will empower their clients to be successful.
 
 [Data Description](https://www.kaggle.com/c/home-credit-default-risk/overview)
 ![image](https://user-images.githubusercontent.com/44923423/150918954-1c6df444-bb94-4b2e-b7cb-1180540578a7.png)
 
-### Task assignment
- - Data Visualization: Yu Di, Rao Ningzhen, Ren Xuezhe
- - Data ingestion and feature engineering: Ding Yanmu, Huang Anni
- - Models: 5 ppl, each one will choose a model
-### Data overview
-![image](https://user-images.githubusercontent.com/44923423/156871738-3a4c5799-75c9-4c2a-9f72-42250a858665.png)
 
-### Timeline:
-- Feb 15(week 6): Due for [project proposal](https://docs.google.com/presentation/d/1UhU1AEJEKgL3x9Jgf06br34fP8WF7JeT4YM4FYSVr9s/edit?usp=sharing)
-- March 5(week 8): Finish our models
-- March 19(week 9): Finish the slides
-
-### Results
+## Results
 
 | |ML models|           |     |  |Deep Learning|
 |-------|---------|------------------|------------|--------|-------------|

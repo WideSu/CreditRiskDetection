@@ -46,11 +46,11 @@ Dealing with highly imbalanced data (1:10) as shown in Fig 2, we need to choose 
 ![image](https://user-images.githubusercontent.com/44923423/161380947-382a00a4-b116-4f8c-b033-92ac1fc0922d.png)
 
 ## Results
-| |ML models|           |     |  |Deep Learning|
-|-------|---------|------------------|------------|--------|-------------|
-|       |ExtraTree|LogisticRegression|RandomForest|LightGBM|DeepFM       |
-|recall |0.7907   |0.3116            |0.7907      |0.8296  |0.8326       |
-|roc_auc|0.9836   |0.85              |0.9836      |0.9448  |0.8492       |
+|Evaluation Matrix|ML models|FIELD3            |FIELD4      |FIELD5  |Deep Learning|
+|-----------------|---------|------------------|------------|--------|-------------|
+|                 |ExtraTree|LogisticRegression|RandomForest|LightGBM|DeepFM       |
+|recall           |0.7907   |0.3116            |0.7907      |0.8296  |0.7860       |
+|roc_auc          |0.9836   |0.85              |0.9836      |0.9448  |0.7885       |
 
 ## Conclusion
 Credit risk-related research is vital for guiding new researchers and practitioners who want to improve their credit risk management practices. For this reason, algorithms integrating various criteria and models have been developed to predict risk-based credit scores.

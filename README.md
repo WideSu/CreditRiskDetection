@@ -39,11 +39,10 @@ The Programs folder contains 8 notebooks, which comprise of 4 phases of the proj
 
 ## Data
 The whole dataset contains 8 tables as shown in Fig 1, application train and test data are the main tables that contain the target, the information about the loan and information about the loan applicant at the application time. The other 6 tables contain information about the credit history of the applicants. In practice, the occurrence of default is far less than normal repayment. We found that among 300 thousand training data, where label ‘1’ indicates default, only 8% of it has positive labels. We also found that some tables, such as the bureau balance table, have too many rows, because one previous credit record may have many associated rows in those tables, and one applicant may have multiple credit records. Hence, we need to do some pre-processing to aggregate the rows in these tables.
-<img width="358" alt="image" src="https://user-images.githubusercontent.com/44923423/161380920-99cc7c11-6c7e-4fe6-b654-b448f5df799d.png">
+<img width="859" alt="image" src="https://user-images.githubusercontent.com/44923423/161380920-99cc7c11-6c7e-4fe6-b654-b448f5df799d.png">
 
 ## Evaluation Metrics
 Dealing with highly imbalanced data (1:10) as shown in Fig 2, we need to choose our evaluation metrics carefully. We select recall rate and AUC score as our evaluation metrics for our models. We chose to prioritise recall over precision mainly based on our domain knowledge: The problem with a low recall is that the company would incur a lot of loss associated with bad debts and that agents will spend much time and effort trying to get the payment from the applicant. While the problem of low precision is that the company will lose some customers and revenues. We believe that misclassifying a default application will lead to greater loss to the company. We also chose AUC score as we want to evaluate the overall ability of classifying positive instances from negative instances of the model. We can change the threshold to make recall score higher, but the AUC score will remain the same and by referring to it, we make sure our model isn’t going too far on the way of sacrificing precision for recall.
-![image](https://user-images.githubusercontent.com/44923423/161380947-382a00a4-b116-4f8c-b033-92ac1fc0922d.png)
 
 ## Results
 <img width="839" alt="image" src="https://user-images.githubusercontent.com/44923423/161381166-8bbd658b-7757-4d21-8fcb-d8cb2f8ba7e2.png">

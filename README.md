@@ -1,5 +1,5 @@
 # Home Credit Default Risk
-This is a group project for ISSS610 Applied Machine Learning.
+This project is to predict whether an applicant is capable to repay a loan using 4 machine learning models, namely logistic regression, random forest, SVM, and lightGBM and one deep learning model called DeepFM. And we drew some inghts from the best model that can be useful for analysts in bank to detect credit risk. From the resulting feature importance of our models, **we found that among the most important features, the more the applicant earned, the longer the applicant have registered, the more document the applicant provides, the lesser likely will applicant default the repayment.**
 ## How to run this? 
 The Programs folder contains 8 notebooks, which comprise of 4 phases of the projects:
 ### 0 Data processing: 

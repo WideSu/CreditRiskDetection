@@ -1,6 +1,6 @@
 # Home Credit Default Risk
 This is a group project for ISSS610 Applied Machine Learning.
-## Notebook Instructions 
+## How to run this? 
 The Programs folder contains 8 notebooks, which comprise of 4 phases of the projects:
 ### 0 Data processing: 
 - Filename: [0.DataIngestion.ipynb](https://github.com/WideSu/ISSS610_AML_Group_Project/blob/main/code/0.DataIngestion.ipynb)

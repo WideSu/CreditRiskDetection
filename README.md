@@ -3,23 +3,23 @@ This is a group project for ISSS610 Applied Machine Learning.
 ## Notebook Instructions 
 The Programs folder contains 8 notebooks, which comprise of 4 phases of the projects:
 ### 0 Data processing: 
-- Filename: [0.DataIngestion.ipynb](https://github.com/WideSu/ISSS610_AML_Group_Project/blob/main/0.DataIngestion.ipynb)
+- Filename: [0.DataIngestion.ipynb](https://github.com/WideSu/ISSS610_AML_Group_Project/blob/main/code/0.DataIngestion.ipynb)
 - Input files: `application_train.csv` and other tables on Kaggle website
 - Output file: `data_v1.csv`
 - Functions:
     - Merged 7 tables
     
 ### 1 EDA
-- Filename: [1.EDA.ipynb](https://github.com/WideSu/ISSS610_AML_Group_Project/blob/main/1.EDA.ipynb)
+- Filename: [1.EDA.ipynb](https://github.com/WideSu/ISSS610_AML_Group_Project/blob/main/code/1.EDA.ipynb)
 - Input file: `data_v1.csv`
 - Output file: None
 - Functions:
     - Plotted histograms, Boxplots, Correlation plots for the merged data
 
 ### 2 Data Preprocessing
-- Filename: [2.DataProcessing.ipynb](https://github.com/WideSu/ISSS610_AML_Group_Project/blob/main/2.DataProcessing.ipynb)
+- Filename: [2.DataProcessing.ipynb](https://github.com/WideSu/ISSS610_AML_Group_Project/blob/main/code/2.DataProcessing.ipynb)
 - Input file: `data_v1.csv`
-- Output files: [test_data.csv](https://github.com/WideSu/ISSS610_AML_Group_Project/blob/main/test_data.csv), [train_data.csv](https://github.com/WideSu/ISSS610_AML_Group_Project/blob/main/train_data.csv)
+- Output files: [test_data.csv](https://github.com/WideSu/ISSS610_AML_Group_Project/blob/main/data/test_data.csv), [train_data.csv](https://github.com/WideSu/ISSS610_AML_Group_Project/blob/main/data/train_data.csv)
 - Functions:
     - Handled missing values
     - Standarized and normalized numerical features
@@ -28,11 +28,11 @@ The Programs folder contains 8 notebooks, which comprise of 4 phases of the proj
 
 ### 3. Modeling
 - Filename:
-    - [3.Modeling_DeepFM.ipynb](https://github.com/WideSu/ISSS610_AML_Group_Project/blob/main/3.Modeling_DeepFM.ipynb)
-    - [3.Modeling_LGBM.ipynb](https://github.com/WideSu/ISSS610_AML_Group_Project/blob/main/3.Modeling_LGBM.ipynb)
-    - [3.Modeling_RandomForest.ipynb](https://github.com/WideSu/ISSS610_AML_Group_Project/blob/main/3.Modeling_RandomForest.ipynb)
-    - [3.Modling_LogisticRegression.ipynb](https://github.com/WideSu/ISSS610_AML_Group_Project/blob/main/3.Modling_LogisticRegression.ipynb)
-- Input files: [test_data.csv](https://github.com/WideSu/ISSS610_AML_Group_Project/blob/main/test_data.csv), [train_data.csv](https://github.com/WideSu/ISSS610_AML_Group_Project/blob/main/train_data.csv)
+    - [3.Modeling_DeepFM.ipynb](https://github.com/WideSu/ISSS610_AML_Group_Project/blob/main/code/3.Modeling_DeepFM.ipynb)
+    - [3.Modeling_LGBM.ipynb](https://github.com/WideSu/ISSS610_AML_Group_Project/blob/main/code/3.Modeling_LGBM.ipynb)
+    - [3.Modeling_RandomForest.ipynb](https://github.com/WideSu/ISSS610_AML_Group_Project/blob/main/code/3.Modeling_RandomForest.ipynb)
+    - [3.Modling_LogisticRegression.ipynb](https://github.com/WideSu/ISSS610_AML_Group_Project/blob/main/code/3.Modling_LogisticRegression.ipynb)
+- Input files: [test_data.csv](https://github.com/WideSu/ISSS610_AML_Group_Project/blob/main/data/test_data.csv), [train_data.csv](https://github.com/WideSu/ISSS610_AML_Group_Project/blob/main/data/train_data.csv)
 - Output file: None
 - Function:
     - Train and evaluate the models
